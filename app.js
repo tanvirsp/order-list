@@ -31,7 +31,7 @@ function showList(obj){
                     <span>$${price}</span>
                     <span>${client}</span>
                     <div>
-                      
+            
                         <button class="delete-btn" onclick="deleteList(event)"> Delete</button>
                     </div>
                     `
