@@ -28,10 +28,10 @@ function showList(obj){
     const {order, price, client} = obj;
 
     li.innerHTML = `<h3>${order}</h3>
-                    <span>${price}</span>
+                    <span>$${price}</span>
                     <span>${client}</span>
                     <div>
-                        <button class="edit-btn" onclick="editList(event)">Edit</button>
+                      
                         <button class="delete-btn" onclick="deleteList(event)"> Delete</button>
                     </div>
                     `
@@ -40,7 +40,8 @@ function showList(obj){
 
 
 function deleteList(event){
-    event.target.parentNode.remove();
+    event.target.parentNode.parentNode.remove();
+
 }
 
 function editList(event){
